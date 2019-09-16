@@ -1,52 +1,175 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Premier site</title>
-  <link rel='stylesheet' href="css/file.css">
+  <meta name="author" content="Raphael MISAIPHON">
+  <link rel='stylesheet' href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Chilanka|Manjari|Merriweather|Oswald|Roboto&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="top">
-    <h1 class='begin'>Mon Top manga</h1>
-    <img class="sakura" src="images/Sakura.png">
-    <img class="rotate-sakura" src="images/Sakura.png">
-  </div>
-
-  <div class='row'>
-    <div class='mid'>
-      <div class='one-piece' class="col-6">
-        <h2>One Piece</h2>
-        <img class="one-img" src="images/one-piece.jpg">
-        <p class='intro'><strong>Artistes</strong> : Eiichirō Oda</p>
-        <p class='intro'><strong>Statut</strong> : En cours</p>
-        <p class='intro'><strong>Genre(s)</strong> : Action, Aventure, Fantastique</p>
-        <p class='intro'><strong>Dernier chapitre</strong> : 955</p>
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mon site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#anime">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#manga">Mangas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#drama">Drama</a>
+          </li>
+        </ul>
       </div>
-      <hr>
-      <div class='hunter' class='col-6'>
-        <h2>Hunter X Hunter</h2>
-        <img class="hunter-img" src="images/hunter.jpg">
-        <p class='sec'><strong>Artistes</strong> : Yoshihiro Togashi<br><strong>Statut</strong> : En cours<br><strong>Genre(s)</strong> : Action, Aventure, Super pouvoirs<br><strong>Dernier chapitre</strong> : 390</p>
-      </div>
-      <hr>
-      <div class='kingdom' class='col-6'>
-        <h2>Kingdom</h2>
-        <img class="kingdom-img" src="images/kingdom.jpg">
-        <p class='sec'><strong>Artistes</strong> : Yasuhisa Hara<br><strong>Statut</strong> : En cours<br><strong>Genre(s)</strong> : Action, Historique, Guerre<br><strong>Dernier chapitre</strong> : 614</p>
-      </div>
-
     </div>
-  </div>
+  </nav>
 
-  <div class="bot">
-    <a class="footer-link" href="https://www.instagram.com/accounts/login/?hl=fr">Instagram</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://fr-fr.facebook.com">Facebook</a>
-  </div>
+  <header class="bg-danger text-white">
+    <div class="container text-center">
+      <h1>Welcome</h1>
+      <p class="lead">Mes favoris</p>
+    </div>
+  </header>
+
+  <section id="anime">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-lg-8 mx-auto">
+          <h2 class="text-center title-section">Anime</h2>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" src="images/one-piece.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Artistes</strong> : Eiichirō Oda</p>
+                <p><strong>Statut</strong> : En cours</p>
+                <p><strong>Genre(s)</strong> : Action, Aventure, Fantastique</p>
+                <p><strong>Dernier épisode</strong> : 902</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" style="width:50%" src="images/hunter.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Artistes</strong> : Yoshihiro Togashi</p>
+                <p><strong>Statut</strong> : En cours</p>
+                <p><strong>Genre(s)</strong> : Action, Aventure, Super pouvoirs</p>
+                <p><strong>Dernier épisode</strong> : 148</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="manga" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center title-section">Manga</h2>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" style="width:50%" src="images/kingdom.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Artistes</strong> : Yasuhisa Hara</p>
+                <p><strong>Statut</strong> : En cours</p>
+                <p><strong>Genre(s)</strong> : Action, Drame, Militaire</p>
+                <p><strong>Dernier chapitre</strong> : 614</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" style="width:50%" src="images/titan.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Artistes</strong> : Hajime Isayama</p>
+                <p><strong>Statut</strong> : En cours</p>
+                <p><strong>Genre(s)</strong> : Militaire, Horreur, Drame</p>
+                <p><strong>Dernier chapitre</strong> : 121</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="drama">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-center title-section">Drama</h2>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" style="width:70%" src="images/doctor.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Acteurs(rices)</strong> : Lee Jong Suk, Jin Se Yeon</p>
+                <p><strong>Statut</strong> : Terminé</p>
+                <p><strong>Genre(s)</strong> : Action, Médical, Romance</p>
+                <p><strong>Episodes</strong> : 20</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="image-gallery" style="width:70%" src="images/hotel.jpg">
+              </div>
+              <div class="col-md-6 text-center">
+                <p><strong>Acteurs(rices)</strong> : IU, Yeo Jin Goo</p>
+                <p><strong>Statut</strong> : Terminé</p>
+                <p><strong>Genre(s)</strong> : Drame, Fantastique, Romance</p>
+                <p><strong>Episodes</strong> : 16</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container text-center" >
+      <a class="footer-link" href="https://www.instagram.com/accounts/login/?hl=fr">Instagram</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://fr-fr.facebook.com">Facebook</a>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
 </body>
 
 </html>
